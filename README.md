@@ -8,7 +8,8 @@ https://drive.google.com/file/d/1dvHWEWEGJaRWaIxfk9DI_uIlKZ0vJzcP/view?usp=shari
 - currency list is updated every 1 second, only visible currencies on the screen is updated to optimize performance
 - utilize local cache to display list offline
 - can search offline, paired with optimization to detect if the currencies haven't yet fetched to also retrieve data from API
-- API request is fine-tuned to retrieve data effectively without overconsuming call credit 
+- API request is fine-tuned to retrieve data effectively without overconsuming call credit
+- log is available only in development mode, no data leakage
 
 ## Requirements
 - NodeJS
