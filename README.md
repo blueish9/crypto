@@ -13,7 +13,8 @@ https://drive.google.com/file/d/1dvHWEWEGJaRWaIxfk9DI_uIlKZ0vJzcP/view?usp=shari
 
 ## Requirements
 - NodeJS
-- Expo
+- React Native requirements as in https://reactnative.dev/docs/set-up-your-environment
+- Expo requirements as in https://docs.expo.dev/get-started/set-up-your-environment/?platform=ios&device=simulated
 
 ## Install
 run command
