@@ -2,7 +2,6 @@ export type Cryptocurrency = {
   id: number;
   name: string;
   symbol: string;
-  price: string;
   quote: {
     USD?: {
       price: number;
@@ -11,17 +10,10 @@ export type Cryptocurrency = {
   };
 };
 
-/*export type CMCMap = {
-  symbol: Record<string, number>;
-  name: Record<string, number>;
-};*/
-
-export type CMCMap = {
+export type CMCMap = Partial<Cryptocurrency> & {
   id: number;
   name: string;
   symbol: string;
 };
 
 export type CryptoLatestQuote = Record<string, Cryptocurrency>;
-
-const COIN_MARKET_CAP_API_KEY = '75d4204d-f286-47f5-80a8-305444cfe1b3';

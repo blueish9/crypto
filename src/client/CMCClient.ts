@@ -1,7 +1,6 @@
 import axios from 'axios';
 
 export const createCMCClient = () => {
-  console.log('process.env.CMC_API_KEY', process.env.EXPO_PUBLIC_CMC_API_KEY);
   const client = axios.create({
     //baseURL: 'https://sandbox-api.coinmarketcap.com/',
     baseURL: 'https://pro-api.coinmarketcap.com/',
@@ -24,4 +23,4 @@ export const createCMCClient = () => {
   return client;
 };
 
-const devlog = !__DEV__ ? console.log : () => null;
+const devlog = __DEV__ ? console.log : () => null;
